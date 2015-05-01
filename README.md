@@ -1,21 +1,19 @@
 #Unified Analytics for Government
 This will be an ongoing documentation of one method for implementing web analytics to track many government agency website in a single Google Analytics profile, with the goal of implementing a tool such as analytics-reporter or 
 
-_This guide is under active development_
+**_This guide is under active development_**
 
 ##About this Guide
-I've included 2 ways to get up and running: The Easy Way, and the _"I want to understand how to do this"_ way. In the near future, I'm planning to build a wizard-style version of The Easy Way (stay tuned).
+I've included 2 ways to get up and running: **[The Easy Way](EasyWay.md)**, and the _"I want to understand how to do this"_ way. In the near future, I'm planning to build a wizard-style version of **[The Easy Way](EasyWay.md)** (stay tuned).
 
-* [The Easy Way](https://www.google.com/analytics)
-
-_No? Okay keep reading for a detailed explanation of a simple intial Google Tag Manager implementation of a single Google Analytics Profile to track web traffic from an entire state/local government's online properties._
+_No easy way for you? Okay keep reading for a detailed explanation of a simple intial Google Tag Manager implementation, using a single Google Analytics Profile to track web traffic from an entire state/local government's online properties._
 
 
 ##Google Analytics
 
-Create new **[Google Analytics Profile](https://www.google.com/analytics)**
-Write down the GA Profile ID
-![]
+Create a new **[Google Analytics _Profile_](https://www.google.com/analytics)**. This can be within a prexisting Google Analytics _Account_.
+Write down the Property's **Tracking ID**
+![images/7-property-ID.png]
 
 ================
 
@@ -26,30 +24,27 @@ Terms:
 - GA = “Google Analytics”
 - WMT = “Webmaster Tools”
 
-You will need a Google account; for convenience use the same email used to log in to Google Analytics if you already have a GA account.
+You will need a Google account; for convenience use the same email used to log in to Google Analytics.
 
-     Go to [Google Tag Manager](https://tagmanager.google.com) website and log in to Google if asked
+- Go to the [Google Tag Manager](https://tagmanager.google.com) website. Log in to Google if required.
+- Enter **Account Name** (e.g. Example Government Name)
+- Enter **primary domain** to be measured, e.g. _example.gov_
+- Agree to Google Tag Manager Use Policy
 
-     Enter **Account Name** (e.g. Example Government Name)
-
-     Enter **primary domain** to be measured, e.g. _example.gov_
-
-     Agree to Google Tag Manager Use Policy
-
-     The snippet of code to embed on every page will be displayed next. You can always retrieve this from the control panel, but copy and save this for later if you wish.
+The snippet of code to embed on every page will be displayed next. You can always retrieve this from the control panel, but copy and save this for later if you wish.
 
 ###Set up to include Google Analytics
 
 Since Tag Manager acts as a “container” for code within a web page, it can include many different types of code snippets, used to measure everything from user interaction to advertising conversions. It was designed with native integration with Google Analytics, and also enables collection of a few extra dimensions in GA such as demographic data (age, gender) out of the box.
 
-Each snippet we want to include is a “tag,” and we’ll add the GA Page View (the primary, required hit we need to send data to GA) to our container as the first one. This is the equivalent of adding the GA code snippet directly to your site.
+Each snippet we want to include is a “tag,” and we’ll add the GA `Page View` (the primary, required hit we need to send data to GA) to our container as the first one. This is the equivalent of adding the GA code snippet directly to your site.
 
-     Click **Tags** in left sidebar
-     ![]
-     Click **New**
-     ![]
-     Enter a name for the tag, e.g. **example.gov GA pageview**
-     ![]
+Click **Tags** in left sidebar
+![]
+Click **New**
+![]
+Enter a name for the tag, e.g. `example.gov GA pageview`
+![]
 
 ####1 Choose Product
      Click **Google Analytics**
@@ -59,37 +54,41 @@ Each snippet we want to include is a “tag,” and we’ll add the GA Page View
 
 For now, this guide will discuss creating a **new** Rollup (umbrella) account. Using an extant account may be done in the same manner, but it’s unlikely you’d want to begin sending traffic from many government agencies’ sites into an account previously used for only one.
 
-(note: all Google Analytics accounts have been migrated to Universal Analytics, if you have not yet upgraded your snippets this is a good time to do so. More: https://developers.google.com/analytics/devguides/collection/upgrade/)
+(note: all Google Analytics accounts have been migrated to Universal Analytics, if you have not yet upgraded your snippets this is a good time to do so. [Read more](https://developers.google.com/analytics/devguides/collection/upgrade/)
 
 **Continue**
 
 ####3 Configure Tag
 
-     - Add **Tracking ID** (this is your Profile ID from Google Analytics, e.g. UA-123456-01)
+-  Add **Tracking ID** (this is your Profile ID from Google Analytics, e.g. `UA-123456-01`)
 
-     - Select **Enable Display Advertising Features**
+-  Check **Enable Display Advertising Features**
 
-     - Leave **Track Type** set at ‘Page View’
+-  Leave **Track Type** set at `Page View`
 
-     - Click **More settings** to expand
-     ![]
-          - Under **Fields to Set**, choose **Add Field**
-          - For **Field Name**, enter 'forceSSL' 
-          - For **Value**, enter 'true'
+-  Click **More settings** to expand
+![]
+     - Under **Fields to Set**, choose **Add Field**
+     -  For **Field Name** enter `forceSSL` 
+     -  For **Value** enter `true`
           _(this ensures GTM will always send data to GA via HTTPS)_
+     - **+Add Field**
+     -  For **Field Name** enter `anonymizeIp`
+     -  For **Value** enter `true`
 
-     - Under **Advanced Configuration**
-     ![]
-     - Change **Enable Enhanced Link Attribution** to ‘True’
+-  Under **Advanced Configuration**
+![]
+-  Change **Enable Enhanced Link Attribution** to `True`
 
 **Continue**
 
 ####4 Fire On
-We need to tell Tag Manager which pages we want it to send data about to Google Analytics. It’s tempting to use ‘All Pages’ here, which would fire our GA tag wherever we have added the Tag Manager snippet. One reason *not* to do this is that, similar to the Google Analytics snippet itself, anyone with the account ID could send traffic to your GA Profile. We can also set up a Filter in GA to do this (and there's nothing wrong with doing both), but for continuity I'm choosing to manage as many factors as possible within the GTM interface.
+We need to tell Tag Manager which pages we want it to send data about to Google Analytics. It’s tempting to use `All Pages` here, which would fire our GA `Page View` tag wherever we have added the Tag Manager snippet. One reason *not* to do this is that, similar to the Google Analytics snippet itself, anyone with the account ID embedded in their code could send traffic to your GA Profile. We can also set up a `Filter` in GA to do this (and there's nothing wrong with doing both), but given the complexity of tracking large sites I'm choosing to manage as many factors as possible within the GTM interface.
 
 Therefore, I recommend choosing **Some Pages**
-     - Create **New**
-     - **Save**
+- Create **New** `Trigger`
+- For now, we will enter the primary domain to track, e.g. `example.gov`
+- **Save**
 
 Your GA Page View tag should now look like this:
 ![]
@@ -100,7 +99,7 @@ Now you should have a GA Page View tag configured:
 ![]
 
 ####Publish
-Your snippet will now be sending Google Analytics data from any site in which it is embedded _AND_ matches the Hostname you configured in the Page View tag we configured.
+Your snippet will now be sending Google Analytics data from any site in which it is embedded _AND_ matches the `Hostname` you configured in the Page View tag we configured.
 
 **Important:** 
 GTM has several useful features specifically built for managing large implementations like this. More on this later, but one of these is **versioning**, which means each time you make changes, you need to **Publish** your container before changes affect your code. It also means if, after testing (see below) you find something in your container is borking your site, you can roll back to a previously testing version with 1 click.
