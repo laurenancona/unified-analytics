@@ -13,9 +13,9 @@ _No easy way for you? Okay keep reading for a detailed explanation of a simple i
 
 Create a new **[Google Analytics _Profile_](https://www.google.com/analytics)**. This can be within a prexisting Google Analytics _Account_.
 Write down the Property's **Tracking ID**
-![images/7-property-ID.png]
 
-================
+![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/7-property-ID.png)
+
 
 ##Setting up Google Tag Manager Container
 
