@@ -12,6 +12,7 @@ _No easy way for you? Okay keep reading for a detailed explanation of a simple i
 ##Google Analytics
 
 Create a new **[Google Analytics _Profile_](https://www.google.com/analytics)**. This can be within a prexisting Google Analytics _Account_.
+
 Write down the Property's **Tracking ID**
 
 ![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/7-property-ID.png)
@@ -19,19 +20,21 @@ Write down the Property's **Tracking ID**
 
 ##Setting up Google Tag Manager Container
 
-Terms:
-- GTM = “Google Tag Manager”
-- GA = “Google Analytics”
-- WMT = “Webmaster Tools”
+Common terms used in this section:
+================
+|-----|-----|
+| GTM | Google Tag Manager |
+| GA | Google Analytics |
 
 You will need a Google account; for convenience use the same email used to log in to Google Analytics.
 
-- Go to the [Google Tag Manager](https://tagmanager.google.com) website. Log in to Google if required.
-- Enter **Account Name** (e.g. Example Government Name)
-- Enter **primary domain** to be measured, e.g. _example.gov_
+- Go to the **[Google Tag Manager](https://tagmanager.google.com)** website. Log in to Google if required.
+- Enter **Account Name** (e.g. `Example Government Name`)
+- Enter **primary domain** to be measured, e.g. `example.gov`
 - Agree to Google Tag Manager Use Policy
 
 The snippet of code to embed on every page will be displayed next. You can always retrieve this from the control panel, but copy and save this for later if you wish.
+![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/
 
 ###Set up to include Google Analytics
 
@@ -40,11 +43,11 @@ Since Tag Manager acts as a “container” for code within a web page, it can i
 Each snippet we want to include is a “tag,” and we’ll add the GA `Page View` (the primary, required hit we need to send data to GA) to our container as the first one. This is the equivalent of adding the GA code snippet directly to your site.
 
 Click **Tags** in left sidebar
-![]
+![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/
 Click **New**
-![]
-Enter a name for the tag, e.g. `example.gov GA pageview`
-![]
+![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/
+Enter a name for the tag, e.g. `GA pageview`
+![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/
 
 ####1 Choose Product
      Click **Google Analytics**
@@ -61,14 +64,14 @@ For now, this guide will discuss creating a **new** Rollup (umbrella) account. U
 ####3 Configure Tag
 
 -  Add **Tracking ID** (this is your Profile ID from Google Analytics, e.g. `UA-123456-01`)
-
--  Check **Enable Display Advertising Features**
+![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/
+-  Check **Enable Display Advertising F![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/eatures**
 
 -  Leave **Track Type** set at `Page View`
 
 -  Click **More settings** to expand
-![]
-     - Under **Fields to Set**, choose **Add Field**
+![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/
+- Under **Fields to Set**, choose **Add Field**
      -  For **Field Name** enter `forceSSL` 
      -  For **Value** enter `true`
           _(this ensures GTM will always send data to GA via HTTPS)_
@@ -77,7 +80,7 @@ For now, this guide will discuss creating a **new** Rollup (umbrella) account. U
      -  For **Value** enter `true`
 
 -  Under **Advanced Configuration**
-![]
+![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/
 -  Change **Enable Enhanced Link Attribution** to `True`
 
 **Continue**
@@ -91,18 +94,21 @@ Therefore, I recommend choosing **Some Pages**
 - **Save**
 
 Your GA Page View tag should now look like this:
-![]
+![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/
 
 **Create Tag**
 
 Now you should have a GA Page View tag configured:
-![]
+![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/
 
 ####Publish
 Your snippet will now be sending Google Analytics data from any site in which it is embedded _AND_ matches the `Hostname` you configured in the Page View tag we configured.
 
 **Important:** 
 GTM has several useful features specifically built for managing large implementations like this. More on this later, but one of these is **versioning**, which means each time you make changes, you need to **Publish** your container before changes affect your code. It also means if, after testing (see below) you find something in your container is borking your site, you can roll back to a previously testing version with 1 click.
+
+###Add GTM Container Snippet to Sites
+
 
 ####A Word on Testing
 I recommend creating _an additional_ Google Analytics Profile for testing (e.g. ‘example.gov testing’) and using that Profile ID to send traffic to while you test the code snippet in your development workflow. When you’re deploying to production, simple change the ‘Tracking ID’ value in your GA Page View tag to that of your production Rollup Profile. This prevents junk traffic from being sent from staging sites to your GA Profile intended for useful reporting.
