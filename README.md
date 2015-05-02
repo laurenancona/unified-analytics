@@ -1,10 +1,10 @@
 #Unified Analytics for Government
-This will be an ongoing documentation of one method for implementing web analytics to track many government agency website in a single Google Analytics profile, with the goal of implementing a tool such as analytics-reporter or 
+This will be an ongoing documentation of one method for implementing web analytics to track many government agency website in a single Google Analytics profile, with the goal of implementing a tool such as [analytics-reporter](https://github.com/18F/analytics-reporter) or [city-analytics-dashboard](https://github.com/codeforamerica/city-analytics-dashboard).
 
 **_This guide is under active development_**
 
 ##About this Guide
-I've included 2 ways to get up and running: **[The Easy Way](EasyWay.md)**, and the _"I want to understand how to do this"_ way. In the near future, I'm planning to build a wizard-style version of **[The Easy Way](EasyWay.md)** (stay tuned).
+I've included 2 ways to get up and running: **[The Easy Way](EasyWay.md)**, and the [**_"I want to understand how to do this"_**](https://github.com/laurenancona/unified-analytics#google-analytics) way. In the near future, I'm planning to build a wizard-style version of **[The Easy Way](EasyWay.md)** (stay tuned).
 
 _No easy way for you? Below is a detailed explanation of a simple intial Google Tag Manager implementation, using a single Google Analytics Profile to track web traffic from an entire state/local government's online properties._
 
@@ -89,11 +89,18 @@ For now, this guide will discuss creating a **new** Rollup (umbrella) account. U
 **Continue**
 
 ####4 Fire On
+![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/
 We need to tell Tag Manager which pages we want it to send data about to Google Analytics. It’s tempting to use `All Pages` here, which would fire our GA `Page View` tag wherever we have added the Tag Manager snippet. One reason *not* to do this is that, similar to the Google Analytics snippet itself, anyone with the account ID embedded in their code could send traffic to your GA Profile. We can also set up a `Filter` in GA to do this (and there's nothing wrong with doing both), but given the complexity of tracking large sites I'm choosing to manage as many factors as possible within the GTM interface.
 
 Therefore, I recommend choosing **Some Pages**
+![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/
+
 - Create **New** `Trigger`
+- ![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/
+- 
 - For now, we will enter the primary domain to track, e.g. `example.gov`
+- ![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/
+- 
 - **Save**
 
 Your GA Page View tag should now look like this:
