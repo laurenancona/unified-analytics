@@ -1,5 +1,6 @@
 #Unified Analytics for Government
-This will be an ongoing documentation of one method for implementing web analytics to track many government agency website in a single Google Analytics profile, with the goal of implementing a tool such as [analytics-reporter](https://github.com/18F/analytics-reporter) or [city-analytics-dashboard](https://github.com/codeforamerica/city-analytics-dashboard).
+![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/container-vis.png)
+This will be an ongoing documentation of one method for implementing web analytics to track many government agency website in a single Google Analytics profile, with the goal of populating a dashboarding tool such as [analytics-reporter](https://github.com/18F/analytics-reporter) or [city-analytics-dashboard](https://github.com/codeforamerica/city-analytics-dashboard).
 
 **_This guide is under active development_**
 
@@ -19,8 +20,6 @@ Write down the Property's **Tracking ID**
 
 
 ##Setting up Google Tag Manager Container
-
-Common terms used in this section:
 
 Common terms used in this section:
 
@@ -46,17 +45,20 @@ Since Tag Manager acts as a “container” for code within a web page, it can i
 Each snippet we want to include is a “tag,” and we’ll add the GA `Page View` (the primary, required hit we need to send data to GA) to our container as the first one. This is the equivalent of adding the GA code snippet directly to your site.
 
 Click **Tags** in left sidebar
-![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/
+![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/new-tag.png)
 Click **New**
-![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/
+![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/5-tag-setup.png)
 Enter a name for the tag, e.g. `GA pageview`
 ![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/
 
 ####1 Choose Product
-     Click **Google Analytics**
+-  Click **Google Analytics**
+     
+     **Continue**
 
 ####2 Choose a Tag Type
-     Select **Universal Analytics**
+-  Select **Universal Analytics**
+![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/5-2-tag-type.png) 
 
 For now, this guide will discuss creating a **new** Rollup (umbrella) account. Using an extant account may be done in the same manner, but it’s unlikely you’d want to begin sending traffic from many government agencies’ sites into an account previously used for only one.
 
