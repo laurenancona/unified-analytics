@@ -6,7 +6,7 @@ This will be an ongoing documentation of one method for implementing web analyti
 ##About this Guide
 I've included 2 ways to get up and running: **[The Easy Way](EasyWay.md)**, and the _"I want to understand how to do this"_ way. In the near future, I'm planning to build a wizard-style version of **[The Easy Way](EasyWay.md)** (stay tuned).
 
-_No easy way for you? Okay keep reading for a detailed explanation of a simple intial Google Tag Manager implementation, using a single Google Analytics Profile to track web traffic from an entire state/local government's online properties._
+_No easy way for you? Below is a detailed explanation of a simple intial Google Tag Manager implementation, using a single Google Analytics Profile to track web traffic from an entire state/local government's online properties._
 
 
 ##Google Analytics
@@ -21,20 +21,23 @@ Write down the Property's **Tracking ID**
 ##Setting up Google Tag Manager Container
 
 Common terms used in this section:
-================
-|-----|-----|
-| GTM | Google Tag Manager |
-| GA | Google Analytics |
+
+Common terms used in this section:
+
+| Abbreviation | Meaning |
+|:-------------|:------------|
+GTM | Google Tag Manager 
+GA | Google Analytics
 
 You will need a Google account; for convenience use the same email used to log in to Google Analytics.
-
+![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/1-signup-screen.png)
 - Go to the **[Google Tag Manager](https://tagmanager.google.com)** website. Log in to Google if required.
 - Enter **Account Name** (e.g. `Example Government Name`)
 - Enter **primary domain** to be measured, e.g. `example.gov`
-- Agree to Google Tag Manager Use Policy
+- Agree to **Google Tag Manager Use Policy**
 
 The snippet of code to embed on every page will be displayed next. You can always retrieve this from the control panel, but copy and save this for later if you wish.
-![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/
+![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/3-snippet.png)
 
 ###Set up to include Google Analytics
 
