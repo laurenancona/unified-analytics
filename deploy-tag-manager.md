@@ -1,6 +1,4 @@
 ---
-title: Deploying Google Tag Manager
-layout: post
 ---
 
 ##Google Analytics
