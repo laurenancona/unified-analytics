@@ -1,11 +1,6 @@
 #Unified Analytics for Government
 This will be an ongoing documentation of one method for implementing web analytics to track many government agency website in a single Google Analytics profile.
 
-Common Terms:
-|-----|-----|
-| GTM | Google Tag Manager |
-| GA | Google Analytics |
-
 ================
 ##Google Analytics
 
@@ -30,7 +25,9 @@ You will need a Google account; for convenience use the same email used to log i
 
 ##Preconfigured Container
 For convenience, I've created a preconfigured Google Tag Manager that includes all of the features discussed in the [how-to guide](README.md).
+
 This is possible because GTM features the ability to export/import entire container configurations as JSON files.
 
 [Download the container template](assets/example-container.json)
 
+###_Note: this will need to be customized with your own Google Analytics profile ID and primary domain name_
