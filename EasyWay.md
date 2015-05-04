@@ -2,7 +2,6 @@
 This will be an ongoing documentation of one method for implementing web analytics to track many government agency website in a single Google Analytics profile.
 
 Common Terms:
-================
 |-----|-----|
 | GTM | Google Tag Manager |
 | GA | Google Analytics |
