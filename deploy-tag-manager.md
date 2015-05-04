@@ -6,8 +6,6 @@ Create a new **[Google Analytics _Profile_](https://www.google.com/analytics)**.
 
 Write down the Property's **Tracking ID**
 
-![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/7-property-ID.png)
-
 
 ##Setting up Google Tag Manager Container
 
@@ -59,49 +57,45 @@ For now, this guide will discuss creating a **new** Rollup (umbrella) account. U
 ####3 Configure Tag
 
 -  Add **Tracking ID** (this is your Profile ID from Google Analytics, e.g. `UA-123456-01`)
-![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/
--  Check **Enable Display Advertising F![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/eatures**
+
+-  Check **Enable Display Advertising Features** ![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/8-1-configure-tag.png)
 
 -  Leave **Track Type** set at `Page View`
 
 -  Click **More settings** to expand
-![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/
+![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/8-2b-anonIP.png)
 - Under **Fields to Set**, choose **Add Field**
-     -  For **Field Name** enter `forceSSL` 
-     -  For **Value** enter `true`
+-  For **Field Name** enter `forceSSL` 
+-  For **Value** enter `true`
           _(this ensures GTM will always send data to GA via HTTPS)_
-     - **+Add Field**
-     -  For **Field Name** enter `anonymizeIp`
-     -  For **Value** enter `true`
+- **+Add Field**
+-  For **Field Name** enter `anonymizeIp`
+-  For **Value** enter `true`
 
 -  Under **Advanced Configuration**
-![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/
--  Change **Enable Enhanced Link Attribution** to `True`
+-   Change **Enable Enhanced Link Attribution** to `True`
 
 **Continue**
 
 ####4 Fire On
-![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/
+![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/8-4-new-trigger.png)
 We need to tell Tag Manager which pages we want it to send data about to Google Analytics. It’s tempting to use `All Pages` here, which would fire our GA `Page View` tag wherever we have added the Tag Manager snippet. One reason *not* to do this is that, similar to the Google Analytics snippet itself, anyone with the account ID embedded in their code could send traffic to your GA Profile. We can also set up a `Filter` in GA to do this (and there's nothing wrong with doing both), but given the complexity of tracking large sites I'm choosing to manage as many factors as possible within the GTM interface.
 
 Therefore, I recommend choosing **Some Pages**
-![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/
-
 - Create **New** `Trigger`
-- ![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/
-- 
+- ![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/8-5-trigger-setup.png)
+
 - For now, we will enter the primary domain to track, e.g. `example.gov`
-- ![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/
-- 
+ 
 - **Save**
 
 Your GA Page View tag should now look like this:
-![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/
+![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/9-1-tag-overview.png)
 
 **Create Tag**
 
 Now you should have a GA Page View tag configured:
-![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/
+![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/9-2-all-tags.png)
 
 ####Publish
 Your snippet will now be sending Google Analytics data from any site in which it is embedded _AND_ matches the `Hostname` you configured in the Page View tag we configured.
