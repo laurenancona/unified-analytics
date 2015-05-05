@@ -5,9 +5,15 @@
     <title>Unified Analytics for Government by laurenancona</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <script type="text/javascript">
+      var enforce = "laurenancona.github.io";
+      if ((enforce == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+
   </head>
   <body>
     <section class="page-header">
@@ -22,7 +28,7 @@
       <h1>
 <a id="unified-analytics-for-government" class="anchor" href="#unified-analytics-for-government" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unified Analytics for Government</h1>
 
-<p><img src="https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/container-vis.jpg" alt=""></p>
+<p><img src="/images/container-vis.jpg" alt=""></p>
 
 <p>This will be an ongoing documentation of one method for implementing web analytics to track many government agency websites within a single Google Analytics profile, with the goal of populating a dashboarding tool such as <a href="https://github.com/18F/analytics-reporter">analytics-reporter</a> or <a href="https://github.com/codeforamerica/city-analytics-dashboard">city-analytics-dashboard</a>.</p>
 
@@ -31,7 +37,7 @@
 <h2>
 <a id="about-this-guide" class="anchor" href="#about-this-guide" aria-hidden="true"><span class="octicon octicon-link"></span></a>About this Guide</h2>
 
-<p>I've included 2 ways to get up and running: <strong><a href="http://github.com/laurenancona/unified-analytics/blob/gh-pages/EasyWay.md">The Easy Way</a></strong>, and the <a href="https://github.com/laurenancona/unified-analytics/blob/gh-pages/deploy-tag-manager.md"><strong><em>"I want to understand how to do this"</em></strong></a> way. In the near future, I'm planning to build a wizard-style version of <strong><a href="http://github.com/laurenancona/unified-analytics/blob/gh-pages/EasyWay.md">The Easy Way</a></strong> (stay tuned).</p>
+<p>I've included 2 ways to get up and running: <strong><a href="https://github.com/laurenancona/unified-analytics/blob/gh-pages/EasyWay.md">The Easy Way</a></strong>, and the <a href="https://github.com/laurenancona/unified-analytics/blob/gh-pages/deploy-tag-manager.md"><strong><em>"I want to understand how to do this"</em></strong></a> way. In the near future, I'm planning to build a wizard-style version of <strong><a href="https://github.com/laurenancona/unified-analytics/blob/gh-pages/EasyWay.md">The Easy Way</a></strong> (stay tuned).</p>
 
 <h2>
 <a id="start-here" class="anchor" href="#start-here" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/laurenancona/unified-analytics/blob/gh-pages/deploy-tag-manager.md">Start here.</a>
@@ -46,7 +52,7 @@
     </section>
 
             <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            var gaJsHost = "https://ssl.";
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
           <script type="text/javascript">
