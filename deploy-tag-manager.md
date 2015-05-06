@@ -32,10 +32,12 @@ Since Tag Manager acts as a “container” for code within a web page, it can i
 
 Each snippet we want to include is a “tag,” and we’ll add the GA `Page View` (the primary, required hit we need to send data to GA) to our container as the first one. This is the equivalent of adding the GA code snippet directly to your site.
 
-Click **Tags** in left sidebar
-Click **New**
-![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/new-tag.png)
-Enter a name for the tag, e.g. `GA pageview`
+- Click **Tags** in left sidebar
+- Click **New**
+
+![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/_site/images/new-tag.png)
+
+- Enter a name for the tag, e.g. `GA pageview`
 ![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/5-tag-setup.png)
 
 ####1 Choose Product
