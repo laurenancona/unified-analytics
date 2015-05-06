@@ -35,7 +35,7 @@ Each snippet we want to include is a “tag,” and we’ll add the GA `Page Vie
 - Click **Tags** in left sidebar
 - Click **New**
 
-![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/_site/images/new-tag.png)
+![](https://github.com/laurenancona/unified-analytics/blob/master/_site/images/%20new-tag.png)
 
 - Enter a name for the tag, e.g. `GA pageview`
 ![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/5-tag-setup.png)
