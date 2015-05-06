@@ -108,7 +108,7 @@ GTM has several useful features specifically built for managing large implementa
 
 
 ####A Word on Testing
-I recommend creating _an additional_ Google Analytics Profile for testing (e.g. ‘example.gov testing’) and using that Profile ID to send traffic to while you test the code snippet in your development workflow. When you’re deploying to production, simple change the ‘Tracking ID’ value in your GA Page View tag to that of your production Rollup Profile. This prevents junk traffic from being sent from staging sites to your GA Profile intended for useful reporting.
+I recommend creating _an additional_ Google Analytics Profile for testing (e.g. ‘example.gov testing’) and using that Profile ID to send traffic to while you test the code snippet in your development workflow. When you’re deploying to production, simply change the ‘Tracking ID’ value in your GA Page View tag to that of your production Rollup Profile. This prevents junk traffic from being sent from staging sites to your GA Profile intended for useful reporting.
 
 **Note:** _as you deploy the container snippet to agency or special interest sites that are not part of your primary .gov domain, you’ll need to add those hostnames to the above trigger, otherwise traffic to those sites will not be included in your Rollup account in GA._
 
