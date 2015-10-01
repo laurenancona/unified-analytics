@@ -25,6 +25,6 @@ For convenience, I've created a preconfigured Google Tag Manager that includes a
 
 This is possible because GTM features the ability to export/import entire container configurations as JSON files.
 
-[Download the container template](assets/example-container.json)
+_coming soon_ [Download the container template]
 
 ###_Note: this will need to be customized with your own Google Analytics profile ID and primary domain name_
