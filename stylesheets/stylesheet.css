@@ -10,7 +10,7 @@ body {
   color: #606c71; }
 
 a {
-  color: #1e6bb8;
+  color: #98C626;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
@@ -56,7 +56,7 @@ a {
 .page-header {
   color: #fff;
   text-align: center;
-  background-color: #159957;
+  background-color: #1B3B56;
   background-image: linear-gradient(120deg, #155799, #159957); }
 
 @media screen and (min-width: 64em) {
