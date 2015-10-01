@@ -1,7 +1,7 @@
 #Unified Analytics for Government
 This will be an ongoing documentation of one method for implementing web analytics to track many government agency website in a single Google Analytics profile.
 
-_This page is incomplete and will be updated by 5/6/15._
+_This page is under development._
 
 ================
 ##Google Analytics
