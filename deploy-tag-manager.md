@@ -2,7 +2,9 @@
 
 ##Google Analytics
 
-Create a new **[Google Analytics _Profile_](https://www.google.com/analytics)**. This can be within a prexisting Google Analytics _Account_. Note: I recommend having **both** a `Reporting` (or `Production`) analytics Profile _and_ a `Testing` Profile: any new tags you want to add as you go, you'll want to test first by sending the informaion to your `Testing` Profile first. This prevents unexpected behavior from damaging the data already present in your Analytics account (once data is passed to Google Analytics, it cannot be removed from their datastore).
+###Important: [prepare your Google Analytics Profiles first](https://github.com/laurenancona/analytics-cfa/blob/gh-pages/homework.md)
+
+This can be within a prexisting Google Analytics _Account_. Note: I recommend having **both** a `Reporting` (or `Production`) analytics Profile _and_ a `Testing` Profile: any new tags you want to add as you go, you'll want to test first by sending the informaion to your `Testing` Profile first. This prevents unexpected behavior from damaging the data already present in your Analytics account (once data is passed to Google Analytics, it cannot be removed from their datastore). The above-linked guide explains in more details.
 
 Write down the Property's **Tracking ID**
 
