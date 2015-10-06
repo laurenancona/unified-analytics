@@ -9,8 +9,9 @@ This can be within a prexisting Google Analytics _Account_. Note: I recommend ha
 ####You'll repeat the below process _for each_ Google Analytics Profile you wish to send data to.  
 Multiple GA 'Tags' can coexist within a single Tag Manager container - this is one of the features that make it useful. By design, they will not interefere with one another and do not require any further customization when fired from within Tag Manager.
 
-Write down the Property's **Tracking ID**
+---
 
+You'll want to have your Google Analytics' Property's **Tracking ID** handy for this process.
 
 ##Setting up Google Tag Manager Container
 
