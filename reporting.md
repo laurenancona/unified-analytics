@@ -4,7 +4,7 @@
 
 To use, you should make sure you're logged in to the Google Analytics account in which you wish to view data, then click the links below. GA will ask you which views you'd like to have the custom report available. Select and click `Ok` and the reports will be available under the `Customization` in the top menu.
 
-##[PDF Downloads]([)https://github.com/laurenancona/unified-analytics/blob/gh-pages/deploy-tag-manager.md)
+##[PDF Downloads](https://github.com/laurenancona/unified-analytics/blob/gh-pages/deploy-tag-manager.md)
 
 Currently this report is configured to be used with the `Reporting` profile included in the Unified Analytics configuration
 
