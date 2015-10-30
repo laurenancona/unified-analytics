@@ -29,4 +29,4 @@ This report is configured to work with the `Testing` profile included in the Uni
 
 - Includes `Global` tab where `Event Action` = `Line # - Error message`, `Event Label` = URI of the script containing the error, and `Full URI` of the parent page with the error
 
-![]()
+![](/images/errors.png)
