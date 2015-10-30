@@ -4,7 +4,7 @@
 
 To use, you should make sure you're logged in to the Google Analytics account in which you wish to view data, then click the links below. GA will ask you which views you'd like to have the custom report available. Select and click `Ok` and the reports will be available under the `Customization` in the top menu.
 
-##[PDF Downloads](https://github.com/laurenancona/unified-analytics/blob/gh-pages/deploy-tag-manager.md)
+##[PDF Downloads](https://www.google.com/analytics/web/template?uid=4fC3iHOLTfCC8Q17D9WCTw)
 
 Currently this report is configured to be used with the `Reporting` profile included in the Unified Analytics configuration
 
@@ -22,3 +22,11 @@ This report is configured to work with the `Testing` profile included in the Uni
 - Includes a tab for viewing `Most Frustrating Elements` where `Event Label` = `elementId`, includes `Full URL` of parent page 
 
 ![](/images/frustrated.png)
+
+##[Javascript Errors](https://www.google.com/analytics/web/template?uid=AbKgL6f2TQy0iixylmFnOQ)
+
+This report is configured to work with the `Testing` profile included in the Unified Analytics configuration
+
+- Includes `Global` tab where `Event Action` = `Line # - Error message`, `Event Label` = URI of the script containing the error, and `Full URI` of the parent page with the error
+
+![]()
