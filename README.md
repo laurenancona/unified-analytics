@@ -5,12 +5,11 @@ how to track many websites with one analytics profile via Google Tag Manager
 
 This will be an ongoing documentation of one method for implementing web analytics to track many government agency websites within a single Google Analytics profile, with the goal of populating a dashboarding tool such as [analytics-reporter](https://github.com/18F/analytics-reporter) or [city-analytics-dashboard](https://github.com/codeforamerica/city-analytics-dashboard).
 
-**_This guide is under active development_**
+**_This project is under active development and not (quite) ready for production_**
 
-##About this Guide
-I've included 2 ways to get up and running: **[The Easy Way](#)** (coming soon), and the [**_"I want to understand how to do this"_**](https://github.com/laurenancona/unified-analytics#google-analytics) way. In the near future, I'm planning to build a wizard-style version of The Easy Way (stay tuned).
+##[Roadmap](https://github.com/laurenancona/unified-analytics/wiki/Roadmap)
 
-###Start here.
+##How to use.
 [Pre-configuration]() items for this setup in Google Analytics & GTM.
 [Deploying Tag Manager](https://raw.githubusercontent.com/laurenancona/unified-analytics/gh-pages/deploy-tag-manager.html)
 
