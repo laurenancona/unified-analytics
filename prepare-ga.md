@@ -53,3 +53,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 #### More reading: 
 - [Google Tag Manager Documentation](https://support.google.com/tagmanager/answer/2574370?hl=en)
 - [Google Analytics for Government](https://www.digitalgov.gov/files/2014/05/2ND_EDITION__GOOGLE_ANALYTICS_FOR_GOVERNMENT_TRAINING_MANUAL-4.pdf), Sarah Kaczmarek
+
+---
+
+##Next: [deploying Google Tag Manager](https://github.com/laurenancona/unified-analytics/blob/gh-pages/deploy-tag-manager.md)
