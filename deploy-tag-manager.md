@@ -4,7 +4,7 @@
 
 ###Important: [prepare your Google Analytics Profiles first](https://github.com/laurenancona/unified-analytics/blob/gh-pages/prepare-ga.md)
 
-This can be within a prexisting Google Analytics _Account_. Note: I recommend having **both** a `Reporting` (or `Production`) analytics Profile _and_ a `Testing` Profile: any new tags you want to add as you go, you'll want to test first by sending the informaion to your `Testing` Profile first. This prevents unexpected behavior from damaging the data already present in your Analytics account (once data is passed to Google Analytics, it cannot be removed from their datastore). The above-linked guide explains in more details.
+This can be within a prexisting Google Analytics _Account_. Note: I recommend having **both** a `Reporting` (or `Production`) analytics Profile _and_ a `Testing` Profile: any new tags you want to add as you go, you'll want to test first by sending the informaion to your `Testing` Profile first. This prevents unexpected behavior from damaging the data already present in your Analytics account (once data is passed to Google Analytics, it cannot be removed from their datastore). The above-linked guide explains in more detail.
 
 ####You'll repeat the below process _for each_ Google Analytics Profile you wish to send data to.  
 Multiple GA 'Tags' can coexist within a single Tag Manager container - this is one of the features that make it useful. By design, they will not interefere with one another and do not require any further customization when fired from within Tag Manager.
