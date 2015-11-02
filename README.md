@@ -9,6 +9,7 @@ This will be an ongoing documentation of one method for implementing web analyti
 
 ##How to use.
 [Pre-configuration](https://github.com/laurenancona/unified-analytics/blob/gh-pages/prepare-ga.md) items for this setup in Google Analytics & GTM.
+
 [Deploying Tag Manager](https://raw.githubusercontent.com/laurenancona/unified-analytics/gh-pages/deploy-tag-manager.html)
 
 ##[Roadmap](https://github.com/laurenancona/unified-analytics/wiki/Roadmap)
