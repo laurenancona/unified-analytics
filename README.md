@@ -1,5 +1,5 @@
 #Unified Analytics for Government
-how to track many websites with one analytics profile via Google Tag Manager
+ready-to-deploy custom web analytics collection & reporting for government
 
 ![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/container-vis.jpg)
 
