@@ -1,7 +1,7 @@
 #Unified Analytics for Government
 ready-to-deploy custom web analytics collection & reporting for government
 
-![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/container-vis.jpg)
+![](https://raw.githubusercontent.com/laurenancona/unified-analytics/gh-pages/images/config.png)
 
 This will be an ongoing documentation of one method for implementing web analytics to track many government agency websites within a single Google Analytics profile, with the goal of populating a dashboarding tool such as [analytics-reporter](https://github.com/18F/analytics-reporter) or [city-analytics-dashboard](https://github.com/codeforamerica/city-analytics-dashboard).
 
