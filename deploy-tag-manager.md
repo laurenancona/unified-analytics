@@ -2,7 +2,7 @@
 
 ##Google Analytics
 
-###Important: [prepare your Google Analytics Profiles first](https://github.com/laurenancona/unified-analytics/blob/gh-pages/prepare-ga.md)
+###Important: [prepare your Google Analytics Properties first](https://github.com/laurenancona/unified-analytics/blob/gh-pages/prepare-ga.md)
 
 This can be within a prexisting Google Analytics _Account_. Note: I recommend having **both** a `Reporting` (or `Production`) analytics Proerty _and_ a `Testing` Property: any new tags you want to add as you go, you'll want to test first by sending the informaion to your `Testing` Property first. This prevents unexpected behavior from damaging the data already present in your Analytics account (once data is passed to Google Analytics, it cannot be removed from their datastore). The above-linked guide explains in more detail.
 
@@ -114,13 +114,13 @@ GTM has several useful features specifically built for managing large implementa
 
 
 ####A Word on Testing
-I recommend creating _an additional_ Google Analytics Profile for testing (e.g. ‘example.gov testing’) and using that Profile ID to send traffic to while you test the code snippet in your development workflow. When you’re deploying to production, simply change the ‘Tracking ID’ value in your GA Page View tag to that of your production Rollup Profile. This prevents junk traffic from being sent from staging sites to your GA Profile intended for useful reporting.
+I recommend creating _an additional_ Google Analytics Property for testing (e.g. ‘example.gov testing’) and using that Property ID to send traffic to while you test the code snippet in your development workflow. When you’re deploying to production, simply change the ‘Tracking ID’ value in your GA Page View tag to that of your production Rollup Property. This prevents junk traffic from being sent from staging sites to your GA Profile intended for useful reporting.
 
 **Note:** _as you deploy the container snippet to agency or special interest sites that are not part of your primary .gov domain, you’ll need to add those hostnames to the above trigger, otherwise traffic to those sites will not be included in your Rollup account in GA._
 
 
 ###Roadmap:
-- Auto configuration for debugging/testing workflow without changing Profile ID
+- Auto configuration for debugging/testing workflow without changing Property ID
 - Sending tracking data to multiple GA Profiles from one GTM container (for example, if an agency has their own analytics installed already, you can easily send traffic to their GA account as well as your Rollup Profile)
 - Advanced configurations using Variables and Triggers to automatically track forms, document downloads, button clicks, video plays, and other user interaction
 
