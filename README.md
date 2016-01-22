@@ -23,6 +23,7 @@ This will be an ongoing documentation of one method for implementing web analyti
 
 #### Near Future
 * ~~Add Frustrated.js to container and configure coresponding custom report~~
+* Add `Track Telephone Clicks` tag to config
 * Incorporate in-line [feedback form](https://github.com/luckyshot/ga-feedback) as a config option - sends user feedback comments to GA as custom events.
 * Release universal reporting tool using the Google Analytics Embed API | *in progress*
 
