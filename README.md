@@ -19,6 +19,16 @@ This will be an ongoing documentation of one method for implementing web analyti
 
 ---
 
+## Useful Tools
+
+### Testing
+
+[Screaming Frog SEO Spider Pro](http://www.screamingfrog.co.uk/seo-spider/) Crawl current site, useful for producing sitemaps and checking analytics implementation coverage.
+[Tag Assistant](https://chrome.google.com/webstore/detail/tag-assistant-by-google/kejbdjndbnbjgmefkgdddjlbokphdefk) (Chrome extension) See all analytics tags firing on a page.
+[Google Analytics Debugger](https://chrome.google.com/webstore/detail/google-analytics-debugger/jnkmfdileelhofjcijamephohjechhna) (Chrome extension) Prints all Google Analytics calls to the JavaScript console.
+[Page Analytics](https://chrome.google.com/webstore/detail/page-analytics-by-google/fnbdnhhicmebfgdgglcdacdapkcihcoh) by Google (Chrome extension) See Google Analytics for properties you have access to without leaving the page.
+
+
 ##[Roadmap](https://github.com/laurenancona/unified-analytics/wiki/Roadmap)
 
 #### Near Future
