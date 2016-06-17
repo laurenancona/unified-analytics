@@ -125,4 +125,4 @@ I recommend creating _an additional_ Google Analytics Property for testing (e.g.
 - Advanced configurations using Variables and Triggers to automatically track forms, document downloads, button clicks, video plays, and other user interaction
 
 
-[ [back](http://laurenancona.github.io/unified-analytics/) ]
+[ [back](http://github.com/laurenancona/unified-analytics/) ]
