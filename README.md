@@ -32,6 +32,9 @@ This will be an ongoing documentation of one method for implementing web analyti
 - [Google Analytics Debugger](https://chrome.google.com/webstore/detail/google-analytics-debugger/jnkmfdileelhofjcijamephohjechhna) (Chrome extension) Prints all Google Analytics calls to the JavaScript console.
 - [Page Analytics](https://chrome.google.com/webstore/detail/page-analytics-by-google/fnbdnhhicmebfgdgglcdacdapkcihcoh) by Google (Chrome extension) See Google Analytics for properties you have access to without leaving the page.
 
+### Other Google Analyics Tracking Implementation Tools
+- [Autotrack.js](https://github.com/googleanalytics/autotrack) JavaScript library by Google intended for a developer audience. Simplifies deploys by automating tracking of common interactions.
+- [Universal Analytics (Node module)](https://github.com/peaksandpies/universal-analytics) Node implementation of Universal Analytics tracking.
 
 ##[Roadmap](https://github.com/laurenancona/unified-analytics/wiki/Roadmap)
 
