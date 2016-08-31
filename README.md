@@ -3,6 +3,10 @@ ready-to-deploy custom web analytics collection & reporting for government
 
 ![](https://raw.githubusercontent.com/laurenancona/unified-analytics/gh-pages/images/accounts.png)
 
+**Note 8.31.16:** As of this week, there have been significant changes to the Google Tag Manager UI. I will try to update screenshots asap, but keep this in mind if attempting to follow this version of documentation.
+
+---
+
 There are three basic components to any web analytics implementation: **configuration, collection, and reporting**. This setup gives a solid foundation for all three, using a single snippet of code that is installed on each page of every site to be included in tracking.
 
 This will be an ongoing documentation of one method for implementing web analytics to track many government agency websites using Google Analytics, with the goal of populating a dashboarding tool such as [analytics-reporter](https://github.com/18F/analytics-reporter) or [city-analytics-dashboard](https://github.com/codeforamerica/city-analytics-dashboard).
