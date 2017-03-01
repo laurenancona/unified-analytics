@@ -1,6 +1,6 @@
 # Frustrated Users
 
-Example of loading a simple JavaScript in a custom HTML tag, triggering a custom event if a user clicks any element more than 5x in less than 800 milliseconds.
+Example of loading a simple JavaScript in a custom HTML tag, triggering a custom event if a user clicks any element more than 5x in less than 800 milliseconds. Useful for further targeting user research tooling in existing large sites.
 
 ### There are 4 components:
 
@@ -24,3 +24,13 @@ Download the [frustrated.json](/json/frustrated.json) and upload to Google Tag M
 ### Reporting
 
 Import [this custom configuration](https://www.google.com/analytics/web/template?uid=kxWo7ztZRpSQyl9p18EvLQ) to any Google Analytics view to report on the custom event data captured by this example.
+
+##[Frustrated Users](https://www.google.com/analytics/web/template?uid=kxWo7ztZRpSQyl9p18EvLQ)
+
+- Includes a tab for viewing `Most Frustrated Users` by `clientId` (random string assigned by GA for a unique user during a unique session)
+- Includes a tab for viewing `Most Frustrating Pages` (largest total of `Frustrated` events)
+- Includes a tab for viewing `Most Frustrating Directories` 
+- Includes a tab for viewing `Most Frustrating Elements` where `Event Label` = `elementId`, includes `Full URL` of parent page 
+
+![](/images/frustrated.png)
+
