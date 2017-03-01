@@ -13,7 +13,7 @@
         for (var i= eventsArr.length-5; i<=eventsArr.length-2; i++){
           if ((eventsArr[i+1]-eventsArr[i])/3+(eventsArr[i+2]-eventsArr[i+1])/3+(eventsArr[i+3]-eventsArr[i+2])/3 <= 800){
 
-          /* Uncomment below to test if frustratied.js is loading on desired pages
+          /* Uncomment below to test if frustrated.js is loading on desired pages
              An alert will appear if any element is clicked more tha 5x in >800ms */
 
             // var customerFrustratedEvent = new CustomEvent(
