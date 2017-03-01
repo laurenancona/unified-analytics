@@ -5,7 +5,7 @@ Example of loading a simple JavaScript in a custom HTML tag, triggering a custom
 ### There are 4 components:
 
 #### Tags
- - **Frustrated.js** _(Custom HTML):_ Loads the script on any desired page (configure trigger accordingly, e.g. All Pages, etc)
+ - **[Frustrated.js](https://github.com/laurenancona/unified-analytics/blob/gh-pages/tags/frustrated.js)** _(Custom HTML):_ Loads the script on any desired page (configure trigger accordingly, e.g. All Pages, etc)
  - **Frustrated User Event** _(Google Analytics Custom Event)_
    - Event Category: **Behavior**
    - Event Action: **Frustrated User**
