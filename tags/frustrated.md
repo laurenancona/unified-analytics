@@ -12,7 +12,7 @@ Example of loading a simple JavaScript in a custom HTML tag, triggering a custom
    - Event Label: **{{Element Id}}**
 
 ### Trigger
- - **Frustrated User**: Fires the **Frustrated User Event**
+ - **Frustrated User**: Listens for event `customerFrustratedEvent` emitted by `frustrated.js` script and fires the **Event - Frustrated User** tag
 
 ### Variables
   - **Element Id** _(Auto-Event Variable):_ Captures the id (if present) of the element a user clicked to trigger the **Frustrated User Event** and passes it as the Event Label_ to Google Analytics.
