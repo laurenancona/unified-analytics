@@ -13,13 +13,13 @@ This will be an ongoing documentation of one method for implementing web analyti
 
 **_This project is under active development and not (quite) ready for production_**
 
-##How to use.
+## How to use.
 
-####1.  [Pre-configuration](https://github.com/laurenancona/unified-analytics/blob/gh-pages/prepare-ga.md) items for this setup in Google Analytics & GTM.
+#### 1.  [Pre-configuration](https://github.com/laurenancona/unified-analytics/blob/gh-pages/prepare-ga.md) items for this setup in Google Analytics & GTM.
 
-####2.  [Deploying Tag Manager](https://github.com/laurenancona/unified-analytics/blob/gh-pages/deploy-tag-manager.md)
+#### 2.  [Deploying Tag Manager](https://github.com/laurenancona/unified-analytics/blob/gh-pages/deploy-tag-manager.md)
 
-####3.  [Custom Reports](https://github.com/laurenancona/unified-analytics/blob/gh-pages/reporting.md)
+#### 3.  [Custom Reports](https://github.com/laurenancona/unified-analytics/blob/gh-pages/reporting.md)
 
 ---
 
