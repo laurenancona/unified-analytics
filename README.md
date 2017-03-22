@@ -46,5 +46,3 @@ This will be an ongoing documentation of one method for implementing web analyti
 
 #### Long Term
 * Browser-based client-side app that allows user to auth to Google Tag Manager account, select custom features, fill in a few variables such as `domain` and Google Anaytics `Profile Id` and upload config (`json`) directly to a container. This would eliminate the need to touch both GA & GTM interfaces directly.
-
-<script type="text/javascript" src="https://www.draw.io/embed.js?s=flowchart"></script>
