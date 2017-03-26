@@ -1,19 +1,19 @@
 
 
-##Google Analytics
+## Google Analytics
 
-###Important: [prepare your Google Analytics Properties first](https://github.com/laurenancona/unified-analytics/blob/gh-pages/prepare-ga.md)
+### Important: [prepare your Google Analytics Properties first](https://github.com/laurenancona/unified-analytics/blob/gh-pages/prepare-ga.md)
 
 This can be within a prexisting Google Analytics _Account_. Note: I recommend having **both** a `Reporting` (or `Production`) analytics Property _and_ a `Testing` Property: any new tags you want to add as you go, you'll want to test first by sending the informaion to your `Testing` Property first. This prevents unexpected behavior from damaging the data already present in your Analytics account (once data is passed to Google Analytics, it cannot be removed from their datastore). The above-linked guide explains in more detail.
 
-####You'll repeat the below process _for each_ Google Analytics Property you wish to send data to.  
+#### You'll repeat the below process _for each_ Google Analytics Property you wish to send data to.  
 Multiple GA 'Tags' can coexist within a single Tag Manager container - this is one of the features that make it useful. By design, they will not interefere with one another and do not require any further customization when fired from within Tag Manager.
 
 ---
 
 You'll want to have your Google Analytics Property's **Tracking ID** handy for this process.
 
-##Setting up Google Tag Manager Container
+## Setting up Google Tag Manager Container
 
 Common terms used in this section:
 
@@ -32,7 +32,7 @@ You will need a Google account; for convenience use the same email used to log i
 The snippet of code to embed on every page will be displayed next. You can always retrieve this from the control panel, but copy and save this for later if you wish.
 ![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/3-snippet.png)
 
-###Set up to include Google Analytics
+### Set up to include Google Analytics
 
 Since Tag Manager acts as a “container” for code within a web page, it can include many different types of code snippets, used to measure everything from user interaction to advertising conversions. It was designed with native integration with Google Analytics, and also enables collection of a few extra dimensions in GA such as demographic data (age, gender) out of the box.
 
@@ -61,7 +61,7 @@ For now, this guide will discuss creating a **new** Rollup (umbrella) account. U
 
 **Continue**
 
-####3 Configure Tag
+#### 3 Configure Tag
 
 -  Add **Tracking ID** (this is your Property ID from Google Analytics, e.g. `UA-123456-01`)
 
@@ -84,7 +84,7 @@ For now, this guide will discuss creating a **new** Rollup (umbrella) account. U
 
 **Continue**
 
-####4 Fire On
+#### 4 Fire On
 ![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/8-4-new-trigger.png)
 We need to tell Tag Manager which pages we want it to send data about to Google Analytics. It’s tempting to use `All Pages` here, which would fire our GA `Page View` tag wherever we have added the Tag Manager snippet. One reason *not* to do this is that, similar to the Google Analytics snippet itself, anyone with the account ID embedded in their code could send traffic to your GA Profile. We can also set up a `Filter` in GA to do this (and there's nothing wrong with doing both), but given the complexity of tracking large sites I'm choosing to manage as many factors as possible within the GTM interface.
 
@@ -104,22 +104,22 @@ Your GA Page View tag should now look like this:
 Now you should have a GA Page View tag configured:
 ![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/9-2-all-tags.png)
 
-####Publish
+#### Publish
 Your snippet will now be sending Google Analytics data from any site in which it is embedded _AND_ matches the `Hostname` you configured in the Page View tag we configured.
 
 **Important:** 
 GTM has several useful features specifically built for managing large implementations like this. More on this later, but one of these is **versioning**, which means each time you make changes, you need to **Publish** your container before changes affect your code. It also means if, after testing (see below) you find something in your container is borking your site, you can roll back to a previously tested version with 1 click.
 
-###Add GTM Container Snippet to Sites
+### Add GTM Container Snippet to Sites
 
 
-####A Word on Testing
+#### A Word on Testing
 I recommend creating _an additional_ Google Analytics Property for testing (e.g. ‘example.gov testing’) and using that Property ID to send traffic to while you test the code snippet in your development workflow. When you’re deploying to production, simply change the ‘Tracking ID’ value in your GA Page View tag to that of your production Rollup Property. This prevents junk traffic from being sent from staging sites to your GA Profile intended for useful reporting.
 
 **Note:** _as you deploy the container snippet to agency or special interest sites that are not part of your primary .gov domain, you’ll need to add those hostnames to the above trigger, otherwise traffic to those sites will not be included in your Rollup account in GA._
 
 
-###Roadmap:
+### Roadmap:
 - Auto configuration for debugging/testing workflow without changing Property ID
 - Sending tracking data to multiple GA Profiles from one GTM container (for example, if an agency has their own analytics installed already, you can easily send traffic to their GA account as well as your Rollup Profile)
 - Advanced configurations using Variables and Triggers to automatically track forms, document downloads, button clicks, video plays, and other user interaction
