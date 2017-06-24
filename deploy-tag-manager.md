@@ -46,12 +46,12 @@ Each snippet we want to include is a “tag,” and we’ll add the GA `Page Vie
 - Enter a name for the tag, e.g. `GA pageview`
 ![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/5-tag-setup.png)
 
-####1 Choose Product
+#### 1 Choose Product
 -  Click **Google Analytics**
      
      **Continue**
 
-####2 Choose a Tag Type
+#### 2 Choose a Tag Type
 -  Select **Universal Analytics**
 ![](https://raw.githubusercontent.com/laurenancona/unified-analytics/master/images/5-2-tag-type.png) 
 
